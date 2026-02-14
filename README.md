@@ -1,5 +1,5 @@
-"# handDrawNumberReco" 
-
-.venv\Scripts\activate           
-pip install -r req.txt
-uvicorn app.main:app --reload      
+# handDrawNumberReco
+1. python3 -m venv .venv
+2. .venv\Scripts\activate           
+3. pip install -r req.txt
+4. uvicorn app.main:app --reload      
