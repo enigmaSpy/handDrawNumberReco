@@ -1,0 +1,13 @@
+# Podstawowa wersja
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+venv/
+.venv/
+.env
+*.h5                
+# modele
+*.log
+.DS_Store
+debug
