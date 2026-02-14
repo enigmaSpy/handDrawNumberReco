@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozpoznawanie Cyfr - HandDraw</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rysuj cyfrę (0-9)</h1>
+        
+        <div class="canvas-container">
+            <canvas id="canvas" width="280" height="280"></canvas>
+        </div>
+        
+        <div class="controls">
+            <button id="clearBtn" class="btn btn-secondary">Wyczyść</button>
+            <button id="predictBtn" class="btn btn-primary">Rozpoznaj</button>
+        </div>
+        
+        <div id="result" class="result hidden">
+            <h2>Wynik: <span id="predictedDigit">-</span></h2>
+            <p>Pewność: <span id="confidence">-</span>%</p>
+            
+            <div class="probabilities">
+                <h3>Prawdopodobieństwa:</h3>
+                <div id="probBars"></div>
+            </div>
+        </div>
+        
+        <div id="error" class="error hidden"></div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
